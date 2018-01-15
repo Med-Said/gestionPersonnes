@@ -1,0 +1,118 @@
+/* les style pour center la formulaire*/
+#divForm
+{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	margin-top: 30px;
+}
+
+label
+{
+	display: inline-block;
+	width: 48%;
+	border: 1px solid black;
+	position: relative;
+	margin-bottom: 14px;
+}
+
+input
+{
+	display: inline-block;
+	width: 48%;
+	position: relative;
+	border: 1px solid #00f;
+	margin-bottom: 14px;
+	margin-left: 2%;
+}
+
+form
+{
+	border: 1px solid red;
+	display: inline-block;
+	width: 100%;
+	margin: 0px;
+	padding: 7px 7px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+
+/*
+style specifique pour le button submit
+*/
+
+#submit
+{
+	display: inline-block;
+	width: 50%;
+	margin: 7px auto;
+	position: relative;
+	border: 1px solid pink;
+	margin-left: 25%;
+
+
+}
+
+#divSubmit
+{
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+
+
+/* les styles du notre menu */
+
+nav,ul,li
+{
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	position: relative;
+}
+
+nav > ul,nav
+{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+nav > ul
+{
+	padding: 7px;
+}
+
+
+nav > ul > li /* les li principaux jouter , chercher , modifier ..*/
+{
+	list-style: none;
+	float: left;
+	border: 1px solid black;
+	width: 20%;
+	box-sizing: border-box;
+	margin-left: 5%;
+	text-align: center;
+	padding: 7px;
+}
+
+.sousMenu
+{
+}
+
+#divNav
+{/*pour centrer le menu ...*/
+	border: 1px solid black;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.sousMenu > li > a
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+	border: 1px solid black;
+}

@@ -1,0 +1,178 @@
+/* les style pour center la formulaire*/
+
+#divForm
+{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#divForm > form > label
+{
+	display: inline-block;
+	width: 48%;
+	border: 1px solid black;
+	position: relative;
+	margin-bottom: 14px;
+}
+
+#divForm > form > input
+{
+	display: inline-block;
+	width: 48%;
+	position: relative;
+	border: 1px solid #00f;
+	margin-bottom: 14px;
+	margin-left: 2%;
+}
+
+#sauvegardePersonne
+{
+	border: 1px solid black;
+	display: inline-block;
+	width: 100%;
+	margin: 0px;
+	padding: 7px 7px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+
+/*
+style specifique pour le button submit
+*/
+
+table{
+	border: 1px solid black;
+}
+
+
+/*
+#submit
+{
+	display: inline-block;
+	width: 50%;
+	margin: 7px auto;
+	position: relative;
+	border: 1px solid pink;
+	margin-left: 25%;
+
+
+}
+
+*/
+
+#divSubmit
+{
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+
+
+/* les styles du notre menu */
+
+nav > ul li > a
+{
+	width: 100%;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid black;
+	margin: 0px;
+	padding: 7px;
+	box-sizing: border-box;
+}
+
+nav,ul,li
+{
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	position: relative;
+}
+
+nav,nav > ul
+{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+/*pour enlever le fait que le hauteur de ul etre collapse a 
+acause de la propriete le ces (float : left) de leur elements li*/
+nav > ul::after
+{
+	content: "";
+	display: block;
+	clear: both;
+	padding-top: : 7px;
+}
+
+
+nav > ul
+{/**/
+	padding: 7px;
+}
+
+nav > ul > li /* les li principaux jouter , chercher , modifier ..*/
+{
+	float: left;
+	width: 20%;
+	box-sizing: border-box;
+	margin-left: 5%;
+	text-align: center;
+}
+
+.sousMenu
+{
+	display: none;
+}
+
+#divNav
+{/*pour centrer le menu ...*/
+	border: 1px solid black;
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+.sousMenu > li 
+{
+	display: inline-block;
+	width: 100%;
+	margin-top: 7px;
+}
+
+.sousMenu > li > a
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+	border: 1px solid black;
+}
+
+
+/*style du menu lors du survol sur ces elements*/
+
+nav > ul li a:hover
+{
+	background: yellow;
+	transition: 1s ease background;
+	transition: 1s ease border-radius;
+	border-radius: 7px;
+	display: contents;
+}
+
+
+/*ce code permet de afficher nos sousMenu
+ lorsque on survole sur les li(les titre principale de notre menu*/
+nav li:hover .sousMenu
+{
+	display: inline-block;
+	z-index: 7;
+	position: absolute;
+	left: 0px;
+	background: rgba(255,255,0,0.14);
+}

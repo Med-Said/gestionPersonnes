@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+	<input type="text" name="text" id="tel">
+
+
+	<input type="submit" name="" value="ok" id="submit">
+
+
+	<script type="text/javascript">
+
+	var submit = document.getElementById('submit');
+
+
+
+
+	submit.addEventListener('click',function () {
+		var tel = document.getElementById('tel').value;
+
+		if(/^[234][0-9]{7}$/.test(tel) || /^\+[2]{3}[234][0-9]{7}$/.test(tel))
+	{
+		alert('true');
+
+	}
+	else
+	{
+		var t = document.getElementById('tel');
+		alert('false');
+		t.focus();
+	}
+	})
+
+	</script>
+</body>
+</html>
